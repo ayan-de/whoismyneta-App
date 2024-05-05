@@ -7,6 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.whoismyneta.ui.theme.WhoIsMyNetaTheme
@@ -21,12 +22,13 @@ fun Header(
             .padding(18.dp)
     ) {
         Text(
-            text = "Who is My Neta",
+            text = "Who is my neta?",
             style = MaterialTheme.typography.displayLarge
         )
         Text(
             text = "Explore self-reported details and parliamentary activity of MPs in the 17th Lok Sabha",
-            style = MaterialTheme.typography.bodyLarge
+            style = MaterialTheme.typography.bodyLarge,
+            textAlign = TextAlign.Center
         )
     }
 }
